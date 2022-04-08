@@ -1,4 +1,5 @@
-# 下载视频
+slowfast/datasets/DATASET.md
+# 下载视频(Download videos)
 ```
 DATA_DIR="../../data/ava/videos"
  
@@ -15,7 +16,7 @@ do
 done
 ```
 
-# 把下载好的视频剪辑到15分钟
+# 把下载好的视频剪辑到15分钟(Cut each video from its 15th to 30th minute)
 ```
 IN_DATA_DIR="../../data/ava/videos"
 OUT_DATA_DIR="../../data/ava/videos_15min"
@@ -34,7 +35,7 @@ do
 done
 ```
 
-# 把剪辑好的视频每一帧提取出来，提取成图片
+# 把剪辑好的视频每一帧提取出来，提取成图片(Extract frames)
 ```
 IN_DATA_DIR="../../data/ava/videos_15min"
 OUT_DATA_DIR="../../data/ava/frames"
@@ -62,7 +63,7 @@ do
   ffmpeg -i "${video}" -r 30 -q:v 1 "${out_name}"
 done
 ```
-# 下载注释文件
+# 下载注释文件(Download annotations)
 ```
 DATA_DIR="../../data/ava/annotations"
  
