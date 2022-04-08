@@ -77,4 +77,5 @@ wget https://research.google.com/ava/download/ava_action_list_v2.1_for_activityn
 wget https://research.google.com/ava/download/ava_train_excluded_timestamps_v2.1.csv -P ${DATA_DIR}
 wget https://research.google.com/ava/download/ava_val_excluded_timestamps_v2.1.csv -P ${DATA_DIR}
 ```
+这里就是ava数据集需要的一些文件，从名称就能知道他是干嘛的，比如 ava_train_v2.1.csv这个文件，就是ava公司发布的train训练集的2.1版本。
 
